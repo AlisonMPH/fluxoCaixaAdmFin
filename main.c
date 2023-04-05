@@ -63,6 +63,7 @@ int main(void) {
 		puts("1-Inserir");
 		puts("2-Calcular Fluxo de caixa");
 		scanf("%d", &opcao);
+		system("clear");
 		switch (opcao) {
 		case 1:
 			semana_menu();
@@ -196,8 +197,7 @@ void inserir(int *sem) {
 	} while (repetir == 1);
 }
 void calcular() {
-	char texto[22][33] = {
-              "*SALDO ANTERIOR                *",
+	char texto[22][33] = {"*SALDO ANTERIOR                *",
 						  "|Recebimento de vendas         |",
 						  "|Salarios                      |",
 						  "|Fornecedores                  |",
@@ -269,21 +269,21 @@ void calcular() {
 		if (x == 1 || x == 6 || x == 11 || x == 15) {
 			switch (x) {
 			case 1:
-        system("clear");
-				puts("|                              FLUXO DE CAIXA "
-					 "OPERACIONAL                             |");
+				puts("|                              |FLUXO DE CAIXA "
+					 "OPERACIONAL                            |");
 				break;
 			case 6:
-				puts("|                              FLUXO DE CAIXA DE "
-					 "INVESTIMENTO                         |");
+				puts("|                              |FLUXO DE CAIXA DE "
+					 "INVESTIMENTO                        |");
 				break;
 			case 11:
-				puts("|                              FLUXO DE CAIXA DE "
-					 "FINANCIAMENTO                        |");
+				puts("|                              |FLUXO DE CAIXA DE "
+					 "FINANCIAMENTO                       |");
 				break;
 			case 15:
-				puts("|                              RESULTADOS                "
-					 "                             |");
+				puts(
+					"|                              |RESULTADOS                "
+					"                            |");
 				break;
 			}
 		}
